@@ -1,0 +1,44 @@
+1. Newton Second Law
+
+STORE ΣF 
+STORE m = 600
+STORE a = 2
+
+CALCULATE ΣF AS m * a
+DISPLAY ΣF
+
+2. Leap Year
+
+STORE year
+STORE LeapYear
+
+IF year / 4 = 0 AND year / 100 != 0, THEN LeapYear IS TRUE
+ELSE IF year/4 = 0 AND year/100 = 0 AND year/400 = 0, THEN LeapYear IS TRUE
+ELSE, LeapYear IS FALSE
+ENDIF
+
+3. Laundry Day
+
+STORE laundry = 20
+STORE washingMachine = 0;
+
+WHILE laundry > 0
+	COMPUTE	washingMachine AS washingMachine + 1,
+	COMPUTE laundry AS laundry - 1;
+ENDWHILE
+
+Start washing machine. 
+
+
+4. Nail Check
+
+STORE students = 40
+STORE badNail
+
+WHILE students > 0
+	IF badNail IS TRUE, THEN punish student
+	ELSE, praise student 
+ENDWHILE
+
+
+
