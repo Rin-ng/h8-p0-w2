@@ -11,11 +11,15 @@ DISPLAY ΣF
 
 STORE year
 STORE LeapYear
+STORE remainder
 
-IF year / 4 = 0 AND year / 100 != 0, THEN LeapYear IS TRUE
-ELSE IF year/4 = 0 AND year/100 = 0 AND year/400 = 0, THEN LeapYear IS TRUE
+IF year mod 4 is 0 AND year mod 100 != 0, THEN LeapYear IS TRUE
+ELSE IF year mod 4 = 0 AND year mod 100 = 0 AND year mod 400 = 0, THEN LeapYear IS TRUE
 ELSE, LeapYear IS FALSE
 ENDIF
+
+
+
 
 3. Laundry Day
 
